@@ -11,7 +11,7 @@ function widthSrcRunOnce(func, scope){
 
 jQuery.fn.widthSrc = function(options){
   options.thresholds.push(0);
-  options.thresholds.sort(function(a,b){return parseFloat(a) < parseFloat(b); });
+  options.thresholds.sort(function(a,b){return parseFloat(b) - parseFloat(a); });
   console.log(options.thresholds);
 
   var elms = jQuery(this);
